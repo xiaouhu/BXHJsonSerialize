@@ -21,14 +21,14 @@
 @optional
 
 /**
- json转model时替换的key  如：{@"propertyName" : @"jsonName"}
+ json转model时替换的key  如：{@"jsonName" : @"propertyName"}
 
  @return dict
  */
 + (NSDictionary *)bxh_ReplaceKeyJsonToModel;
 
 /**
- model转json时替换的key  如：{@"jsonName" : @"propertyName"}
+ model转json时替换的key  如：{@"propertyName" : @"jsonName"}
  
  @return dict
  */

@@ -12,7 +12,7 @@
 
 @interface BXHProModel : NSObject
 
-@property (nonatomic, copy) NSString *provId;
+@property (nonatomic, copy) NSString *myProId;//replace
 
 @property (nonatomic, copy) NSString *provName;
 
