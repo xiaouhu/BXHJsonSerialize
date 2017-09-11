@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6268B231F66210D0043C77B /* allArea.json in Resources */ = {isa = PBXBuildFile; fileRef = A6268B221F66210D0043C77B /* allArea.json */; };
+		A6268B261F6621230043C77B /* BXHProModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6268B251F6621230043C77B /* BXHProModel.m */; };
+		A6268B291F6621300043C77B /* BXHCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6268B281F6621300043C77B /* BXHCityModel.m */; };
+		A6268B2C1F6621400043C77B /* BXHAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6268B2B1F6621400043C77B /* BXHAreaModel.m */; };
 		A680F40D1F60E04C007FC363 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A680F40C1F60E04C007FC363 /* main.m */; };
 		A680F4101F60E04C007FC363 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A680F40F1F60E04C007FC363 /* AppDelegate.m */; };
 		A680F4131F60E04C007FC363 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A680F4121F60E04C007FC363 /* ViewController.m */; };
 		A680F4161F60E04C007FC363 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A680F4141F60E04C007FC363 /* Main.storyboard */; };
 		A680F4181F60E04C007FC363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A680F4171F60E04C007FC363 /* Assets.xcassets */; };
 		A680F41B1F60E04C007FC363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A680F4191F60E04C007FC363 /* LaunchScreen.storyboard */; };
+		A680F4251F60E09C007FC363 /* NSObject+BXHJsonSerialize.m in Sources */ = {isa = PBXBuildFile; fileRef = A680F4241F60E09C007FC363 /* NSObject+BXHJsonSerialize.m */; };
+		A680F42B1F61181A007FC363 /* BXHClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A680F42A1F61181A007FC363 /* BXHClassInfo.m */; };
+		A69531DC1F62352200932C09 /* BXHTempModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A69531DB1F62352200932C09 /* BXHTempModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6268B221F66210D0043C77B /* allArea.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = allArea.json; sourceTree = "<group>"; };
+		A6268B241F6621230043C77B /* BXHProModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXHProModel.h; sourceTree = "<group>"; };
+		A6268B251F6621230043C77B /* BXHProModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXHProModel.m; sourceTree = "<group>"; };
+		A6268B271F6621300043C77B /* BXHCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXHCityModel.h; sourceTree = "<group>"; };
+		A6268B281F6621300043C77B /* BXHCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXHCityModel.m; sourceTree = "<group>"; };
+		A6268B2A1F6621400043C77B /* BXHAreaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXHAreaModel.h; sourceTree = "<group>"; };
+		A6268B2B1F6621400043C77B /* BXHAreaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXHAreaModel.m; sourceTree = "<group>"; };
 		A680F4081F60E04C007FC363 /* BXHJsonSerialize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BXHJsonSerialize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A680F40C1F60E04C007FC363 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A680F40E1F60E04C007FC363 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +40,12 @@
 		A680F4171F60E04C007FC363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A680F41A1F60E04C007FC363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A680F41C1F60E04C007FC363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A680F4231F60E09C007FC363 /* NSObject+BXHJsonSerialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BXHJsonSerialize.h"; sourceTree = "<group>"; };
+		A680F4241F60E09C007FC363 /* NSObject+BXHJsonSerialize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BXHJsonSerialize.m"; sourceTree = "<group>"; };
+		A680F4291F61181A007FC363 /* BXHClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXHClassInfo.h; sourceTree = "<group>"; };
+		A680F42A1F61181A007FC363 /* BXHClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXHClassInfo.m; sourceTree = "<group>"; };
+		A69531DA1F62352200932C09 /* BXHTempModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXHTempModel.h; sourceTree = "<group>"; };
+		A69531DB1F62352200932C09 /* BXHTempModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXHTempModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,8 @@
 		A680F40A1F60E04C007FC363 /* BXHJsonSerialize */ = {
 			isa = PBXGroup;
 			children = (
+				A6268B221F66210D0043C77B /* allArea.json */,
+				A680F4221F60E06A007FC363 /* BXHJsonSerialize */,
 				A680F40E1F60E04C007FC363 /* AppDelegate.h */,
 				A680F40F1F60E04C007FC363 /* AppDelegate.m */,
 				A680F4111F60E04C007FC363 /* ViewController.h */,
@@ -67,6 +89,14 @@
 				A680F4191F60E04C007FC363 /* LaunchScreen.storyboard */,
 				A680F41C1F60E04C007FC363 /* Info.plist */,
 				A680F40B1F60E04C007FC363 /* Supporting Files */,
+				A69531DA1F62352200932C09 /* BXHTempModel.h */,
+				A69531DB1F62352200932C09 /* BXHTempModel.m */,
+				A6268B241F6621230043C77B /* BXHProModel.h */,
+				A6268B251F6621230043C77B /* BXHProModel.m */,
+				A6268B271F6621300043C77B /* BXHCityModel.h */,
+				A6268B281F6621300043C77B /* BXHCityModel.m */,
+				A6268B2A1F6621400043C77B /* BXHAreaModel.h */,
+				A6268B2B1F6621400043C77B /* BXHAreaModel.m */,
 			);
 			path = BXHJsonSerialize;
 			sourceTree = "<group>";
@@ -77,6 +107,17 @@
 				A680F40C1F60E04C007FC363 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A680F4221F60E06A007FC363 /* BXHJsonSerialize */ = {
+			isa = PBXGroup;
+			children = (
+				A680F4231F60E09C007FC363 /* NSObject+BXHJsonSerialize.h */,
+				A680F4241F60E09C007FC363 /* NSObject+BXHJsonSerialize.m */,
+				A680F4291F61181A007FC363 /* BXHClassInfo.h */,
+				A680F42A1F61181A007FC363 /* BXHClassInfo.m */,
+			);
+			path = BXHJsonSerialize;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +180,7 @@
 			files = (
 				A680F41B1F60E04C007FC363 /* LaunchScreen.storyboard in Resources */,
 				A680F4181F60E04C007FC363 /* Assets.xcassets in Resources */,
+				A6268B231F66210D0043C77B /* allArea.json in Resources */,
 				A680F4161F60E04C007FC363 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +193,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A680F4131F60E04C007FC363 /* ViewController.m in Sources */,
+				A680F42B1F61181A007FC363 /* BXHClassInfo.m in Sources */,
+				A69531DC1F62352200932C09 /* BXHTempModel.m in Sources */,
+				A680F4251F60E09C007FC363 /* NSObject+BXHJsonSerialize.m in Sources */,
+				A6268B261F6621230043C77B /* BXHProModel.m in Sources */,
+				A6268B2C1F6621400043C77B /* BXHAreaModel.m in Sources */,
+				A6268B291F6621300043C77B /* BXHCityModel.m in Sources */,
 				A680F4101F60E04C007FC363 /* AppDelegate.m in Sources */,
 				A680F40D1F60E04C007FC363 /* main.m in Sources */,
 			);
@@ -309,6 +357,7 @@
 				A680F4211F60E04C007FC363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

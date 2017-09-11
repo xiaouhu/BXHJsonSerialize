@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "BXHClassInfo.h"
+#import "BXHTempModel.h"
+
+#import "BXHProModel.h"
 
 @interface ViewController ()
 
@@ -14,8 +18,17 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"allArea" ofType:@"json"];
+    NSString *jsonStr = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
+    NSArray *ary = [BXHProModel bxh_SerializeWithJsonStr:jsonStr];
+    
+    
+    NSArray *jsonAry = [BXHProModel bxh_DeserializeToAryWithModelAry:ary];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
