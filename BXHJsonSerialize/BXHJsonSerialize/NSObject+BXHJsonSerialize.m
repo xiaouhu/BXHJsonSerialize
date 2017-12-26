@@ -449,7 +449,6 @@ static id BXHNoneNull(__unsafe_unretained id value)
 }
 
 //================= model -------> json ======================//
-
 + (NSArray *)bxh_DeserializeToAryWithModelAry:(NSArray *)modelAry
 {
     NSMutableArray *dicts = [NSMutableArray arrayWithCapacity:modelAry.count];
@@ -499,6 +498,5 @@ static id BXHNoneNull(__unsafe_unretained id value)
     }];
     return dict;
 }
-
 
 @end

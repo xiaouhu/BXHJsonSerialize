@@ -26,14 +26,14 @@
     NSString *jsonStr = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
     NSArray *ary = [BXHProModel bxh_SerializeWithJsonStr:jsonStr];
     
-    
     NSArray *jsonAry = [BXHProModel bxh_DeserializeToAryWithModelAry:ary];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

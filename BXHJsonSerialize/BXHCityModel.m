@@ -12,12 +12,12 @@
 
 - (id)bxh_JsonSerializeWithSerializeArray:(NSArray *)array andPropertyName:(NSString *)name
 {
-    return [BXHAreaModel bxh_modelArySerializeWithAry:array];
+    return [BXHAreaSubModel bxh_modelArySerializeWithAry:array];
 }
 
 - (NSArray *)bxh_JsonSerizlizeAryWithModels:(NSArray *)modelAry andPropertyName:(NSString *)name
 {
-    return [BXHAreaModel bxh_DeserializeToAryWithModelAry:modelAry];
+    return [BXHAreaSubModel bxh_DeserializeToAryWithModelAry:modelAry];
 }
 
 @end

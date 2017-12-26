@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BXHAreaModel.h"
+#import "BXHAreaSubModel.h"
 #import "NSObject+BXHJsonSerialize.h"
 
 @interface BXHCityModel : NSObject
@@ -16,6 +16,6 @@
 
 @property (nonatomic, copy) NSString *cityName;
 
-@property (nonatomic, strong) NSArray <BXHAreaModel *>*areaList;
+@property (nonatomic, strong) NSArray <BXHAreaSubModel *>*areaList;
 
 @end

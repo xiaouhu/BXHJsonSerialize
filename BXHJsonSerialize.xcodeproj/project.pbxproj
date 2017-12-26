@@ -11,6 +11,7 @@
 		A6268B261F6621230043C77B /* BXHProModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6268B251F6621230043C77B /* BXHProModel.m */; };
 		A6268B291F6621300043C77B /* BXHCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6268B281F6621300043C77B /* BXHCityModel.m */; };
 		A6268B2C1F6621400043C77B /* BXHAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6268B2B1F6621400043C77B /* BXHAreaModel.m */; };
+		A67ECBE81FD8D367002220C5 /* BXHAreaSubModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A67ECBE71FD8D367002220C5 /* BXHAreaSubModel.m */; };
 		A680F40D1F60E04C007FC363 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A680F40C1F60E04C007FC363 /* main.m */; };
 		A680F4101F60E04C007FC363 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A680F40F1F60E04C007FC363 /* AppDelegate.m */; };
 		A680F4131F60E04C007FC363 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A680F4121F60E04C007FC363 /* ViewController.m */; };
@@ -30,6 +31,8 @@
 		A6268B281F6621300043C77B /* BXHCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXHCityModel.m; sourceTree = "<group>"; };
 		A6268B2A1F6621400043C77B /* BXHAreaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXHAreaModel.h; sourceTree = "<group>"; };
 		A6268B2B1F6621400043C77B /* BXHAreaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXHAreaModel.m; sourceTree = "<group>"; };
+		A67ECBE61FD8D367002220C5 /* BXHAreaSubModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BXHAreaSubModel.h; sourceTree = "<group>"; };
+		A67ECBE71FD8D367002220C5 /* BXHAreaSubModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BXHAreaSubModel.m; sourceTree = "<group>"; };
 		A680F4081F60E04C007FC363 /* BXHJsonSerialize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BXHJsonSerialize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A680F40C1F60E04C007FC363 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A680F40E1F60E04C007FC363 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				A6268B281F6621300043C77B /* BXHCityModel.m */,
 				A6268B2A1F6621400043C77B /* BXHAreaModel.h */,
 				A6268B2B1F6621400043C77B /* BXHAreaModel.m */,
+				A67ECBE61FD8D367002220C5 /* BXHAreaSubModel.h */,
+				A67ECBE71FD8D367002220C5 /* BXHAreaSubModel.m */,
 			);
 			path = BXHJsonSerialize;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 			files = (
 				A680F4131F60E04C007FC363 /* ViewController.m in Sources */,
 				A680F42B1F61181A007FC363 /* BXHClassInfo.m in Sources */,
+				A67ECBE81FD8D367002220C5 /* BXHAreaSubModel.m in Sources */,
 				A69531DC1F62352200932C09 /* BXHTempModel.m in Sources */,
 				A680F4251F60E09C007FC363 /* NSObject+BXHJsonSerialize.m in Sources */,
 				A6268B261F6621230043C77B /* BXHProModel.m in Sources */,

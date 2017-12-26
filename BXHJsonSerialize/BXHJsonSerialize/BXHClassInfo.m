@@ -7,8 +7,7 @@
 //
 
 #import "BXHClassInfo.h"
-
-
+#import "NSObject+BXHJsonSerialize.h"
 
 static BXHPropertyType BXHEncodeGetType(const char *type)
 {
@@ -122,18 +121,37 @@ static BXHPropertyNSType BXHClassIsNSClass(Class cls)
 {
     if (self = [super init])
     {
-        unsigned int outCount;
         _propertyMap = [NSMutableDictionary dictionary];
-        objc_property_t *properties = class_copyPropertyList(cls, &outCount);
-        for (int i = 0; i < outCount; i++)
+        [self setPropertyToMapWithClass:cls];
+        if ([cls respondsToSelector:@selector(bxh_serizlizeSuperCls)])
         {
-            BXHPropertyInfo *propertyInfo = [[BXHPropertyInfo alloc] init];
-            propertyInfo.property = properties[i];
-            [(NSMutableDictionary *)_propertyMap setObject:propertyInfo forKey:propertyInfo.name];
+            BOOL getSuper = [cls bxh_serizlizeSuperCls];
+            if (getSuper) [self getSuperClassProperty:cls];
         }
-        free(properties);
     }
     return self;
+}
+
+- (void)getSuperClassProperty:(Class)cls
+{
+    Class superCls = class_getSuperclass(cls);
+    if (!class_isMetaClass(superCls) && ![superCls isMemberOfClass:[NSObject class]])
+    {
+        [self setPropertyToMapWithClass:superCls];
+    }
+}
+
+- (void)setPropertyToMapWithClass:(Class)cls
+{
+    unsigned int outCount;
+    objc_property_t *properties = class_copyPropertyList(cls, &outCount);
+    for (int i = 0; i < outCount; i++)
+    {
+        BXHPropertyInfo *propertyInfo = [[BXHPropertyInfo alloc] init];
+        propertyInfo.property = properties[i];
+        [(NSMutableDictionary *)_propertyMap setObject:propertyInfo forKey:propertyInfo.name];
+    }
+    free(properties);
 }
 
 @end

@@ -70,6 +70,14 @@
  */
 - (NSArray *)bxh_JsonSerizlizeAryWithModels:(NSArray *)modelAry andPropertyName:(NSString *)name;
 
+
+/**
+ 用于判断是否解析父类属性
+
+ @return yes解析 no不解析
+ */
++ (BOOL)bxh_serizlizeSuperCls;
+
 @end
 
 @interface NSObject (BXHJsonSerialize) <BXHJsonSerializeProtcol>

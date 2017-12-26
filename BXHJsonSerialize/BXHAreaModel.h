@@ -12,6 +12,5 @@
 
 @property (nonatomic, copy) NSString *areaId;
 
-@property (nonatomic, copy) NSString *areaName;
 
 @end
